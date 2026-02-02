@@ -1,3 +1,36 @@
 \chapter{数系扩充}
 
-\section{自然数}
+自然数系是最基础的数系，通过集合论，已经定义了自然数。自然数上定义加法和乘法两种运算，通过这两种运算的组合，可以定义多项式和多项式方程。
+
+\begin{definition}[多项式 Polynomial]
+    设 $a_0,a_1,a_2,\cdots,a_n$ 是常量，$x$ 是变量，$n\in\mathbb{N}$ 是自然数，则形如
+    \[
+        P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
+    \]
+    的表达式称为一个\textbf{多项式}，其中，$a_i,i=0,\cdots,n$ 称为多项式的\textbf{系数}，$n$ 称为多项式的\textbf{次数}，当 $a_n \neq 0$ 时，称 $a_n$ 为多项式的\textbf{首项系数}。
+    \label{def:polynomial_real}
+\end{definition}
+
+\begin{definition}[多项式方程 Polynomial Equation]
+    设 $P(x)$ 是一个首项系数不为零的多项式，等式：
+    \[
+        P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0
+    \]
+    称为一个 $n$-\textbf{次多项式方程}。
+    \label{def:polynomial_equation_real}
+\end{definition}
+
+数系扩充的动力源自解多项式方程 \ref{def:polynomial_equation_real}，从自然数出发可以逐步扩充出整数、有理数、实数和复数。根据代数基本定理，复数是多项式方程的代数闭包，也即任何系数为复数的多项式方程都能在复数域内找到解。从代数角度，数系扩充到复数就足够了。
+\vspace{1em}
+
+\begin{note}
+    在复数之后，数系的扩充主要有两条途径：一是引入超实数和超复数，从而构造非标准分析；二是引入四元数和八元数，从而构造更高维的代数结构。不过这些数系都与解多项式方程的关系不大，最后只简单介绍一下四元数系。
+\end{note}
+
+\newpage
+
+\section{整数}
+
+为了解多项式方程：$x + a = 0,\ \forall a \in \mathbb{N}$ 需要引入整数系。
+
+\newpage
