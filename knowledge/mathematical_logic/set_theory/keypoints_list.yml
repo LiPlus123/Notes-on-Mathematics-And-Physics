@@ -1,0 +1,12 @@
+- axiom_of_extensionality:
+  description: 外延公理
+  url: zfc_axiomatic_system/axiom_of_extensionality.md
+- equivalence_of_sets_condition:
+  description: 两集合相等的等价条件
+  url: zfc_axiomatic_system/axiom_of_extensionality.md
+- subset_definition:
+  description: 子集的定义
+  url: zfc_axiomatic_system/axiom_of_extensionality.md
+- subset_condition:
+  description: 一个集合是两一个集合子集的等价条件
+  url: zfc_axiomatic_system/axiom_of_extensionality.md

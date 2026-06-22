@@ -1,0 +1,5 @@
+{"version": "1.1.0",
+ "packagesDir": "../build/.lake/packages",
+ "packages": [],
+ "name": "MathNotes",
+ "lakeDir": ".lake"}

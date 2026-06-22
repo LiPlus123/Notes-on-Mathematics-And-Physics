@@ -1,0 +1,9 @@
+first_order_language:
+  title: 一阶语言
+  sections: 
+    - syntax:
+      title: 语法
+      subsections:  
+        - init_symbols:
+          title: 初始符号
+

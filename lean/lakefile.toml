@@ -1,0 +1,15 @@
+name = "Notes"
+version = "0.1.0"
+buildDir = "../build/.lake"
+packagesDir = "../build/.lake/packages"
+defaultTargets = ["notes"]
+
+[[lean_lib]]
+name = "mathematical_logic"
+
+[[lean_lib]]
+name = "discrete_mathematics"
+
+[[lean_exe]]
+name = "notes"
+root = "main"

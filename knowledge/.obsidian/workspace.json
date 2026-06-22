@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "179d1647376f0696",
+    "type": "split",
+    "children": [
+      {
+        "id": "df013a63d0fdb251",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a62e6abbf41ef8df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mathematical_logic/what_is_logic/propositional_logic/tautology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tautology"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4db5f4a1e43ff0c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb8b5083980b2d33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a8a0ce4692e7318",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "1205de54bbcf4dda",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "4092aca8aa238bb7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4b9e65a9549f645f",
+    "type": "split",
+    "children": [
+      {
+        "id": "667024a56e405a62",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "582b1342181aafe3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "a48f942131b11d1d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "da3490f9ca502f57",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "72c0fa9f829f4780",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "4a3e1759e96d6d75",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "8a8a0ce4692e7318",
+  "lastOpenFiles": [
+    "mathematical_logic/propositional_language/deduct",
+    "mathematical_logic/what_is_logic/propositional_logic/equivalent.md",
+    "mathematical_logic/what_is_logic/propositional_logic/propositional_logic.md",
+    "mathematical_logic/what_is_logic/propositional_logic/connective.md",
+    "mathematical_logic/what_is_logic/propositional_logic/truth_table.md",
+    "mathematical_logic/what_is_logic/propositional_logic/tautology.md",
+    "mathematical_logic/what_is_logic/predicate_logic/predicate_logic.md",
+    "mathematical_logic/what_is_logic/mathematical_logic/naive_set_theory.md",
+    "mathematical_logic/what_is_logic/mathematical_logic/mathematical_logic.md",
+    "mathematical_logic/what_is_logic/mathematical_logic/hilberts_program.md",
+    "mathematical_logic/what_is_logic/classical_logic/thinking_and_language.md",
+    "mathematical_logic/what_is_logic/classical_logic/classical_logic.md",
+    "logic.md",
+    "mathematical_logic/what_is_logic/propositional_logic",
+    "mathematical_logic/what_is_logic/mathematical_logic/naive_set_theory",
+    "mathematical_logic/what_is_logic/classical_logic",
+    "mathematical_logic/propositional_language/language/initial_symbols.md",
+    "mathematical_logic/propositional_language/language/propositional_language.md",
+    "mathematical_logic/what_is_logic/deductive_logic",
+    "mathematical_logic/propositional_language/language/language.md",
+    "mathematical_logic/propositional_language/syntax/initial_symbols.md",
+    "mathematical_logic/propositional_language/language",
+    "mathematical_logic/propositional_language/syntax",
+    "appendices/math_history",
+    "appendices/lean4_prover",
+    "mathematical_logic/high_order_language/symbols_list.md",
+    "mathematical_logic/high_order_language/keypoints_list.yml",
+    "mathematical_logic/high_order_language/chapters_outline.yml",
+    "mathematical_logic/type_theory/symbols_list.md",
+    "mathematical_logic/classical_logic/symbols_list.md",
+    "mathematical_logic/what_is_logic/what_is_logic/thinking_and_language.md",
+    "mathematical_logic/what_is_logic/what_is_logic/classical_logic.md",
+    "mathematical_logic/what_is_logic/symbols_list.md",
+    "mathematical_logic/recursion_theory/symbols_list.md",
+    "mathematical_logic/first_order_arithmetic/symbols_list.md",
+    "mathematical_logic/first_order_language/symbols_list.md"
+  ]
+}

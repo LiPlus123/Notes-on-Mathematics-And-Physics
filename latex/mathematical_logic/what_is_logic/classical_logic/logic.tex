@@ -1,0 +1,49 @@
+\subsection{逻辑学}
+\label{subsection:logic}
+
+经典逻辑学认为思维有三种基本形式：\textbf{词项 Term}、\textbf{命题 Proposition} 和\textbf{推理 Reasoning}。其中，
+\begin{enumerate}
+    \item 词项也称为\textbf{概念 Concept}，反映对象的属性或关系，是思维的最小单位。比如“金属”和“能导电”就是两个词项。
+    \item 命题也称为\textbf{判断 Judgment}，是对思维对象有所断定（肯定/否定）的思维形式。比如“所有金属都能导电”就是一个命题，它的真假由物理学检验。
+    \item 推理也称为\textbf{论证 Argument}，是由已知命题（前提）推出新命题（结论）的思维形式。比如：“所有金属都能导电”，“铁是金属”，因此“铁能导电”就是一个推理。
+\end{enumerate}
+
+\vspace{1em}
+\textbf{逻辑学 Logic}：研究思维形式规律的学科。其中，推理的“有效性 Validity”，是逻辑学研究的核心对象。根据推理的类型，逻辑学可以分为如下大类：
+\begin{enumerate}
+    \item \textbf{演绎逻辑 Deductive Logic}：研究演绎推理的逻辑。演绎推理是从一般到特殊的推理过程。演绎推理的特点是“前提为真则结论必然为真”。演绎逻辑又可以分为：
+    \begin{enumerate}
+        \item \textbf{命题逻辑 Propositional Logic}：以命题为最小单元，研究命题到命题之间的推理规则。
+        \item \textbf{谓词逻辑 Predicate Logic}：将命题拆分为谓词、量词、个体词等成分，研究这些词组成的命题之间的推理规则
+        \item \textbf{模态逻辑 Modal Logic}：命题中还含有模态词，研究含模态词的命题之间的推理规则
+    \end{enumerate}
+    \item \textbf{非演绎逻辑 Non-deductive logic}：研究非演绎推理的逻辑。非演绎推理是从特殊到一般，或者特殊到特殊的推理过程。非演绎逻辑的特点是，结论的真值不完全依赖于前提，可能出现真的前提，推出假的结论。非演绎逻辑又可以分为：
+    \begin{enumerate}
+        \item \textbf{归纳逻辑 Inductive Logic}：归纳是从特殊到一般的推理过程
+        \item \textbf{类比逻辑 Analogical Logic}：类比是从特殊到特殊的推理过程
+    \end{enumerate}
+\end{enumerate}
+
+\begin{remark}
+    数学证明就是演绎推理的过程。在数学中，有一些“无需证明的真命题”，称为“公理 Axiom”，数学体系都是建立在这些公理之上。在公理系统内，从真前提出发，通过数学证明，一定能得到真实的结论。
+\end{remark}
+
+\begin{remark}
+    数学证明中常用的“数学归纳法 Mathematical Induction”并不是归纳推理，而是自然数结构的一条基本原理。在皮亚诺算术中，它被形式化为归纳公理模式，后面会详细介绍。因此，利用数学归纳法进行证明，本质上仍然是依据从公理出发的演绎推理。
+\end{remark}
+
+\begin{remark}
+    在经典逻辑学中，对象语言和元语言都是自然语言，研究推理的有效性。而在现代数理逻辑中，为了避免自然语言的模糊性和歧义性，使用人工语言作为对象语言，自然语言作为元语言，研究该人工语言及其演绎系统的可靠性 Soundness、完备性 Completeness 等。
+\end{remark}
+
+\vspace{1em}
+\textbf{逻辑思维的基本规律}：任何经典逻辑学分支，都必须遵守以下三条基本规律：
+\begin{enumerate}
+    \item \textbf{同一律 The law of identity}：在同一推理过程中，任何一个概念和命题，都必须同一意义上前后一致
+    \item \textbf{矛盾律 The law of non-contradiction}：在同一推理过程中，相互否定的命题不能同时为假，必有一真
+    \item \textbf{排中律 The law of excluded middle}：在同一推理过程中，相互否定的命题不能同时为真，必有一假
+\end{enumerate}
+
+\begin{remark}
+    这三条规律在传统逻辑中占有很重要的地位，它们从不同的方面保证思想的确定性、一致性和明确性。任何违反逻辑基本规律的思维过程，都是无效的、不确定的、自相矛盾的、模棱两可的，不能得到可靠的结论。
+\end{remark}

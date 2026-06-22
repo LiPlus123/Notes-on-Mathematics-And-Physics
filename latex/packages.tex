@@ -1,0 +1,101 @@
+\usepackage{ctex}                                   % 中文支持
+\usepackage{amsmath, amssymb, amsthm, mathtools}    % 数学环境
+\usepackage{mathrsfs}                               % 数学花体字支持
+\usepackage{makeidx}                                % 索引支持
+\usepackage{enumitem}                               % 列表环境
+\usepackage{tikz}                                   % 绘图支持
+% \usepackage{pgfplots}                               % 绘图支持
+% \usepackage{pgfplotstable}                          % 表格支持
+\usepackage{bm}                                     % 粗体数学符号
+\usepackage{geometry}                               % 页面设置
+\usepackage{xcolor}                                 % 颜色支持
+\usepackage{graphicx}                               % 图片支持
+\usepackage{tcolorbox}                              % 盒子支持
+
+% 参考文献支持
+\usepackage[
+  backend=biber,
+  style=numeric,
+  citestyle=numeric,
+  sorting=none,
+  maxnames=3,
+  minnames=1,
+  maxbibnames=99,
+  minbibnames=1,
+  giveninits=true,
+  doi=false,
+  isbn=false,
+  url=true
+]{biblatex}
+
+% 超链接支持
+\usepackage[
+    colorlinks=true,        % 启用彩色链接
+    linkcolor=blue,         % 章节、图表等内部链接颜色
+    citecolor=blue,         % 引用链接颜色
+    urlcolor=blue           % URL 链接颜色
+    pdfborder={0 0 0},      % 去掉链接周围的边框
+]{hyperref}
+
+\usepackage{cleveref}                               % 智能引用支持
+
+
+%--------------------------------------------------------------------------------------
+% cref 链接环境设置
+%--------------------------------------------------------------------------------------
+\crefname{axiom}{公理}{公理}               % cref 引用 axiom 环境时使用 "公理" 作为单数和复数形式
+\crefname{definition}{定义}{定义}         % cref 引用 definition 环境时使用 "定义" 作为单数和复数形式
+\crefname{theorem}{定理}{定理}           % cref 引用 theorem 环境时使用 "定理" 作为单数和复数形式
+\crefname{proposition}{命题}{命题}       % cref 引用 proposition 环境时使用 "命题" 作为单数和复数形式
+\crefname{lemma}{引理}{引理}             % cref 引用 lemma 环境时使用 "引理" 作为单数和复数形式
+\crefname{corollary}{推论}{推论}       % cref 引用 corollary 环境时使用 "推论" 作为单数和复数形式
+\crefname{example}{例}{例}             % cref 引用 example 环境时使用 "例" 作为单数和复数形式
+\crefname{remark}{注}{注}             % cref 引用 remark 环境时使用 "注" 作为单数和复数形式
+\crefname{note}{说明}{说明}             % cref 引用 note 环境时使用 "说明" 作为单数和复数形式
+\crefname{section}{节}{节}             % cref 引用 section 环境时使用 "节" 作为单数和复数形式
+\crefname{chapter}{章}{章}             % cref 引用 chapter 环境时使用 "章" 作为单数和复数形式
+\crefname{equation}{式}{式}           % cref 引用 equation 环境时使用 "式" 作为单数和复数形式
+\crefname{figure}{图}{图}             % cref 引用 figure 环境时使用 "图" 作为单数和复数形式
+\crefname{table}{表}{表}             % cref 引用 table 环境时使用 "表" 作为单数和复数形式
+
+%--------------------------------------------------------------------------------------
+% 页面布局设置
+%--------------------------------------------------------------------------------------
+\geometry{
+    left=1.5cm,    % 左边距
+    right=1.5cm,   % 右边距
+    top=2.5cm,     % 上边距
+    bottom=3cm     % 下边距
+}
+
+\setlength{\parskip}{0em} % 段间距
+\setlength{\parindent}{0em} % 首行缩进
+
+%--------------------------------------------------------------------------------------
+% 枚举块设置
+%--------------------------------------------------------------------------------------
+\setlist[enumerate]
+{
+    topsep=0.3em, % 块前后间隔
+    itemsep=0.3em, % 枚举项之间的间隔
+    partopsep=0em, % 段落前间隔
+    parsep=0em    % 段落内间隔
+}
+
+%--------------------------------------------------------------------------------------
+% 参考文献设置
+%--------------------------------------------------------------------------------------
+\addbibresource{bibliography/references.bib} % 添加参考文献数据库文件
+
+%--------------------------------------------------------------------------------------
+% 注意盒子
+%--------------------------------------------------------------------------------------
+\newtcolorbox{important}[1][]
+{
+    colback=gray!10!white, % 盒子背景色
+    colframe=gray!50!black, % 盒子边框色
+    title=说明, % 盒子标题
+    before=\vspace{0.5em}, % 盒子前间距
+    after=\vspace{1em}, % 盒子后间距
+    #1
+}

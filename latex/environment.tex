@@ -1,0 +1,43 @@
+%--------------------------------------------------------------------------------------
+% 数学环境设置
+%--------------------------------------------------------------------------------------
+\numberwithin{equation}{section}            % 公式编号按章节重新计数，例如 chapter2 section3 的第 7 个公式编号为 (2.3.7)
+
+\theoremstyle{definition}                   % 定义环境样式，适用于定义、例等
+\newtheorem{definition}{定义}[section]      % 定义环境，按章节重新计数，例如 chapter2 section3 的第 1 个定义编号为 (2.3.1)
+\newtheorem{example}{例}[section]           % 例环境，按章节重新计数，例如 chapter2 section3 的第 1 个例编号为 (2.3.1)
+
+\theoremstyle{plain}                        % 定理环境样式，plain 是默认样式，适用于定理、命题、引理、推论等
+\newtheorem{axiom}{公理}[section]           % 公理环境，按章节重新计数，例如 chapter2 section3 的第 1 个公理编号为 (2.3.1)
+\newtheorem{theorem}{定理}[section]         % 定理环境，按章节重新计数，例如 chapter2 section3 的第 1 个定理编号为 (2.3.1)
+\newtheorem{proposition}{命题}[section]     % 命题环境，按章节重新计数，例如 chapter2 section3 的第 1 个命题编号为 (2.3.1)
+\newtheorem{lemma}{引理}[section]           % 引理环境，按章节重新计数，例如 chapter2 section3 的第 1 个引理编号为 (2.3.1)
+\newtheorem{corollary}{推论}[section]       % 推论环境，按章节重新计数，例如 chapter2 section3 的第 1 个推论编号为 (2.3.1)
+
+\theoremstyle{remark}                       % 评注环境样式，适用于评注、注释等
+\newtheorem{remark}{注}[section]          % 评注环境，按章节重新计数，例如 chapter2 section3 的第 1 个评注编号为 (2.3.1)
+\newtheorem{note}{说明}[section]          % 说明环境，按章节重新计数，例如 chapter2 section3 的第 1 个说明编号为 (2.3.1)
+
+% 设置 \newtheorem 块的前后间隔
+\AtBeginEnvironment{axiom}{\vspace{0.8em}}
+\AtEndEnvironment{axiom}{\vspace{0.0em}}
+\AtBeginEnvironment{definition}{\vspace{0.8em}}
+\AtEndEnvironment{definition}{\vspace{0.0em}}
+\AtBeginEnvironment{theorem}{\vspace{0.8em}}
+\AtEndEnvironment{theorem}{\vspace{0.0em}}
+\AtBeginEnvironment{proposition}{\vspace{0.8em}}
+\AtEndEnvironment{proposition}{\vspace{0.0em}}
+\AtBeginEnvironment{lemma}{\vspace{0.8em}}
+\AtEndEnvironment{lemma}{\vspace{0.0em}}
+\AtBeginEnvironment{corollary}{\vspace{0.8em}}
+\AtEndEnvironment{corollary}{\vspace{0.0em}}
+\AtBeginEnvironment{example}{\vspace{0.8em}}
+\AtEndEnvironment{example}{\vspace{0.0em}}
+\AtBeginEnvironment{remark}{\vspace{0.8em}}
+\AtEndEnvironment{remark}{\vspace{0.0em}}
+\AtBeginEnvironment{note}{\vspace{0.8em}}
+\AtEndEnvironment{note}{\vspace{0.0em}}
+
+% 设置 proof 块的前后间距
+\AtBeginEnvironment{proof}{\vspace{0.0em}}
+\AtEndEnvironment{proof}{\vspace{0.0em}}

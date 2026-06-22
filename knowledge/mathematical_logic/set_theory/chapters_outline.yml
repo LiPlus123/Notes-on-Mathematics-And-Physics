@@ -1,0 +1,10 @@
+set_theory:
+  title: 集合论
+  sections:
+    - zfc_axiomatic_system:
+      title: ZFC 公理系统
+      subsections:
+        - syntax_of_zfc:
+          title: ZFC 公理系统的语法
+        - axiom_of_extensionality:
+          title: 外延公理
