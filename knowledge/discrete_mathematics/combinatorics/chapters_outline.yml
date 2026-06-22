@@ -1,0 +1,16 @@
+combinatorics:
+  title: 组合数学
+  sections:
+    - permutations_and_combinations:
+        title: 排列与组合
+        subsections:
+          - counting_principles:
+              title: 计数原理
+          - permutations:
+              title: 排列
+          - combinations:
+              title: 组合
+          - binomial_theorem:
+              title: 二项式定理
+          - multinomial_theorem:
+              title: 多项式定理

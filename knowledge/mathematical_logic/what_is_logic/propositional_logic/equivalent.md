@@ -4,7 +4,8 @@ tags:
   - logic
   - propositional_logic
   - classical_logic
-refs: "[[logic/classical_logic/propositional_logic/tautology|tautology]]"
+refs:
+  - "[[tautology]]"
 ---
 
 

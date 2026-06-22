@@ -1,0 +1,78 @@
+- addition_principle:
+  description: 加法原理
+  url: permutations_and_combinations/counting_principles
+- multiplication_principle:
+  description: 乘法原理
+  url: permutations_and_combinations/counting_principles
+- permutations:
+  description: 排列的定义
+  url: permutations_and_combinations/permutations
+- permutation_formula:
+  description: 排列数公式
+  url: permutations_and_combinations/permutations
+- repeated_permutations:
+  description: 重复排列的定义
+  url: permutations_and_combinations/permutations
+- repeated_permutation_formula:
+  description: 重复排列数公式
+  url: permutations_and_combinations/permutations
+- circular_permutations:
+  description: 圆排列的定义
+  url: permutations_and_combinations/permutations
+- circular_permutation_formula:
+  description: 圆排列数公式
+  url: permutations_and_combinations/permutations
+- combinations:
+  description: 组合的定义
+  url: permutations_and_combinations/combinations
+- combination_formula:
+  description: 组合数公式
+  url: permutations_and_combinations/combinations
+- symmetry_of_combination:
+  description: 组合数的对称性
+  url: permutations_and_combinations/combinations
+- pascal_identity:
+  description: 帕斯卡恒等式
+  url: permutations_and_combinations/combinations
+- absorption_identity:
+  description: 吸收恒等式
+  url: permutations_and_combinations/combinations
+- binomial:
+  description: 二项式的定义
+  url: permutations_and_combinations/binomial_theorem
+- binomial_theorem:
+  description: 二项式定理
+  url: permutations_and_combinations/binomial_theorem
+- sum_of_binomial_coefficients:
+  description: 二项式定理的推论，二项式系数之和恒等式
+  url: permutations_and_combinations/binomial_theorem
+- weighted_sum_of_binomial_coefficients:
+  description: 二项式系数加权和恒等式
+  url: permutations_and_combinations/binomial_theorem
+- alternating_sum_of_binomial_coefficients:
+  description: 二项式定理的推论，二项式系数交错和恒等式
+  url: permutations_and_combinations/binomial_theorem
+- weighted_alternating_sum_of_binomial_coefficients:
+  description: 二项式系数加权交错和恒等式
+  url: permutations_and_combinations/binomial_theorem
+- vandermondes_identity:
+  description: 范德蒙德恒等式
+  url: permutations_and_combinations/binomial_theorem
+- sum_of_squares_of_binomial_coefficients:
+  description: 二项式系数平方和恒等式
+  url: permutations_and_combinations/binomial_theorem
+- hockey_stick_identity:
+  description: 曲棍球棒恒等式
+  url: permutations_and_combinations/binomial_theorem
+- multinomial:
+  description: 多项式的定义
+  url: permutations_and_combinations/multinomial_theorem
+- multinomial_coefficient:
+  description: 多项式系数的定义
+  url: permutations_and_combinations/multinomial_theorem
+- multinomial_coefficient_product_form:
+  description: 多项式系数的连乘形式
+  url: permutations_and_combinations/multinomial_theorem
+- multinomial_theorem:
+  description: 多项式定理
+  url: permutations_and_combinations/multinomial_theorem
