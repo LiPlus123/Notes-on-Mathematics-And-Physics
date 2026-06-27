@@ -1,0 +1,57 @@
+- initial_symbols_l_0:
+    description: 命题逻辑语言的初始符号的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
+- formula_l_0:
+    description: 命题逻辑语言公式形成的规则与命题逻辑语言公式的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
+- conj_l_0:
+    description: 合取逻辑连接词的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
+- disj_l_0:
+    description: 析取逻辑连接词的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
+- bicon_l_0:
+    description: 双条件逻辑连接词的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
+- truth_function_l_0:
+    description: 真值函数的定义，逻辑连接词如何影响命题公式的真值
+    belongs_to: propositional_language/semantics_l_0
+- neg_truth_func_l_0:
+    description: 否定逻辑连接词的真值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- imp_truth_func_l_0:
+    description: 蕴含逻辑连接词的真值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- conj_truth_func_l_0:
+    description: 合取逻辑连接词的真值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- disj_truth_func_l_0:
+    description: 析取逻辑连接词的真值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- bicond_truth_func_l_0:
+    description: 双条件逻辑连接词的真值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- assignment_l_0:
+    description: 命题变元的赋值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- formula_assignment_l_0:
+    description: 命题公式的赋值函数的定义
+    belongs_to: propositional_language/semantics_l_0
+- satisfaction_l_0:
+    description: 命题公式的满足关系的定义
+    belongs_to: propositional_language/semantics_l_0
+- satisfiable_formula_l_0:
+    description: 可满足式的定义
+    belongs_to: propositional_language/semantics_l_0
+- tautology_l_0:
+    description: 重言式的定义
+    belongs_to: propositional_language/semantics_l_0
+- contradiction_formula_l_0:
+    description: 矛盾式的定义
+    belongs_to: propositional_language/semantics_l_0
+- common_tautologies_l_0:
+    description: 常见的重言式
+    belongs_to: propositional_language/semantics_l_0
+- semantic_consequence_l_0:
+    description: 语义后承的定义
+    belongs_to: propositional_language/semantics_l_0

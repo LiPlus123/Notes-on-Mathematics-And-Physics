@@ -1,0 +1,56 @@
+mathematical_logic:
+  title: 数理逻辑
+  sections:
+  - what_is_logic:
+    title: 什么是逻辑学
+    subsections:
+    - thinking_and_language:
+      title: 思维与语言
+    - classical_logic:
+      title: 经典逻辑学
+    - mathematical_logic:
+      title: 数理逻辑
+  - propositional_language:
+    title: 命题逻辑语言
+    subsections:
+    - symbols_and_syntax_l_0:
+      title: 符号和语法
+      content: 初始符号、公式的形成、拓展逻辑连接词
+    - semantics_l_0:
+      title: 语义
+      content: 真值函数与赋值函数、满足关系、语义后承、可满足式、重言式
+    - axiom_system_l_0:
+      title: 公理系统
+      content: 公理模式、MP 规则、形式证明、可证关系、演绎定理
+    - natural_deduction_l_0:
+      title: 自然演绎系统
+      content: 演绎规则、形式证明、与公理系统的等价性
+    - sequent_calculus_l_0:
+      title: 相继式演算系统
+      content: 序列、演绎规则、形式证明、割消定理、与公理系统的等价性
+    - meta_theory_l_0:
+      title: 元理论
+      content: 紧致性、可靠性、完全性、紧致性与可判定性
+  - first_order_language:
+    title: 一阶逻辑语言
+    subsections:
+    - symbols_and_syntax_l_1:
+      title: 符号和语法
+  - recursion_theory:
+    title: 递归论
+    subsections:
+  - first_order_arithmetic:
+    title: 一阶算数
+    subsections:
+  - proof_theory:
+    title: 证明论
+    subsections:
+  - model_theory:
+    title: 模型论
+    subsections:
+  - high_order_language:
+    title: 高阶逻辑语言
+    subsections:
+  - type_theory:
+    title: 类型论
+    subsections:

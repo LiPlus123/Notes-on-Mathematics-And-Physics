@@ -1,7 +1,0 @@
-propositional_language:
-  title: 命题逻辑语言
-  sections:
-    - syntax:
-      title: 语法
-    - semantics:
-      title: 语义

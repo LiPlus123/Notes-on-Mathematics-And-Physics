@@ -1,5 +1,0 @@
-type_theory:
-  title: 类型论
-  sections:
-    - simply_typed_lambda_calculus:
-      title: 简单类型 λ 演算
