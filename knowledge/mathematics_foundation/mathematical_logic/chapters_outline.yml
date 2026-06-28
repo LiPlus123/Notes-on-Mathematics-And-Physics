@@ -30,7 +30,7 @@ mathematical_logic:
       content: 序列、演绎规则、形式证明、切消定理、与公理系统的等价性、与自然演绎系统的等价性
     - meta_theory_l_0:
       title: 元理论
-      content: 紧致性、可靠性、完全性、紧致性与可判定性
+      content: 一致性、极大一致集、可靠性、林登鲍姆引理、真值引理、完全性、可满足性与一致性的等价性、紧致性与可判定性
   - first_order_language:
     title: 一阶逻辑语言
     subsections:

@@ -1,16 +1,15 @@
 ---
 name: knowledge-review
-description: "阅读知识库的内容，审查知识库的准确性、完整性和一致性。当用户提到知识审查、检查知识库、检查知识文档、knowledge review、knowledge check 时，使用本技能。自动定位 `knowledge/` 目录下对应的章节，进行专项检查。本 Skill 仅用于审查，绝对不修改任何文件。
+description: "阅读知识库的内容，审查知识库的准确性、完整性和一致性。当用户提到知识审查、检查知识库、检查知识、检查知识文档、knowledge review、knowledge check 时，使用本技能。自动定位 `knowledge/` 目录下对应的章节，进行专项检查。本 Skill 仅用于审查，绝对不修改任何文件。"
 ---
 
 ## 审查流程
 
 ### 第一步：获取文档内容
 
-1. 读取 `symbols_list.md` 确认项目内的符号约定
+1. 读取 `symbols_list.md` 确认项目内的术语和符号约定
 2. 阅读 `specifications.md` 确认项目内的知识文档规范
-2. 读取对应章节的 `chapters_outline.yml` 确认章节结构
-3. 读取对应章节的 `keypoints_list.yml` 确认章节的知识点
+3. 读取对应章节的 `chapters_outline.yml` 确认章节结构
 4. 读取指定的 Markdown 文档，获取其内容
 
 ### 第二步：开始审查
@@ -29,9 +28,8 @@ description: "阅读知识库的内容，审查知识库的准确性、完整性
 
 **3.知识库不完整**：
 - 遗漏重要的知识点
-- 知识点的 keypoint_id 重复或者与内容无关
-- 知识点的 keypoint_id 没有收录到 `keypoints_list.yml` 中
-- `keypoints_list.yml` 收录的知识点 id 的 `belongs_to` 与章节结构不一致
+- 知识点重复或者与 subsection 内容无关
+- 知识点的 keypoint_id 重复或者与知识点内容无关
 
 **4.术语与符号滥用错用**：
 - 使用了与 `symbols_list.md` 中约定不一致的符号和术语
