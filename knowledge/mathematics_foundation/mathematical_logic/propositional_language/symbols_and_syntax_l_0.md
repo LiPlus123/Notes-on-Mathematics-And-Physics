@@ -10,7 +10,7 @@ refs:
 
 # 符号和语法
 
-命题逻辑语言是一门人工语言，准确地说是专门用来形式化经典命题逻辑的形式语言。根据[[thinking_and_language|语言的三要素]]，下面给出命题逻辑语言的初始符号和语法规则。
+根据[[thinking_and_language|语言的三要素]]，下面给出命题逻辑语言的初始符号和语法规则。
 
 <!-- initial_symbols_l_0 -->
 > [!Definition]
@@ -19,11 +19,10 @@ refs:
 > - 初始连接词 Connective：$\neg$ 和 $\to$
 > - 括号 Parentheses：$($ 和 $)$
 
-> 在经典逻辑学中，命题逻辑研究复合命题及其推理规则。复合命题由命题变元和逻辑连接词构成，命题变元只是一个占位符，它可以被任何具体的命题所代替。
-
-> 在经典命题逻辑学中，还有 $\wedge$、$\vee$、$\leftrightarrow$ 三个连接词，它们在 $\mathcal{L}_0$ 中可以通过 $\neg$ 和 $\to$ 定义出来，因此不是初始连接词。
-
-> 括号用于明确表达式的结构，避免歧义。在不引起歧义的前提下，可以省略括号，但需要遵循一定的优先级和结合规则，后面会详细说明。
+> 在命题逻辑语言的初始符号中：
+> 1. 在经典逻辑学中，命题逻辑研究复合命题及其推理规则。复合命题由命题变元和逻辑连接词构成，命题变元只是一个占位符，它可以被任何具体的命题所代替。如果只有有限少量的命题变元，也常用小写字母 $p,q,r$ 来表示。
+> 2. 在经典命题逻辑学中，还有 $\wedge$、$\vee$、$\leftrightarrow$ 三个连接词，它们在 $\mathcal{L}_0$ 中可以通过 $\neg$ 和 $\to$ 定义出来，因此不是初始连接词。
+> 3. 括号用于明确表达式的结构，避免歧义。在不引起歧义的前提下，可以省略括号，但需要遵循一定的优先级和结合规则，后面会详细说明。
 
 <!-- formula_l_0 -->
 > [!Definition]
@@ -33,6 +32,7 @@ refs:
 > 3. 如果 $\varphi$ 和 $\psi$ 是公式，那么 $(\varphi \to \psi)$ 也是公式
 > 
 > 只有根据以上规则有限次使用得到的字符串才是 $\mathcal{L}_0$ 的公式，除此之外没有别的公式。
+
 
 > 符合语法规则的字符串，称为 $\mathcal{L}_0$ 的“公式”，通常记为 $\varphi_0,\varphi_1,\cdots$ 或 $\varphi,\psi$。由公式组成的集合，称为“公式集”，通常记为 $\Gamma_0,\Gamma_1,\ldots$ 或 $\Gamma,\Delta,\Sigma$。
 
@@ -81,14 +81,24 @@ refs:
 > \varphi \leftrightarrow \psi := ((\varphi \to \psi) \wedge (\psi \to \varphi))
 > $$
 
-**括号的省略约定**：为了使表达式更加简洁，在不引起歧义的前提下，引入括号的省略约定：
-1. 公式最外层的括号可以省略
-2. 连接词的结合力依次递减为： $\neg$，$\wedge$，$\vee$，$\to$，$\leftrightarrow$
-3. 相同优先级的连接词，从右向左结合
-4. 其他情况下，括号不能省略
+
+> **括号的省略约定**：为了使表达式更加简洁，在不引起歧义的前提下，引入括号的省略约定：
+> 1. 公式最外层的括号可以省略
+> 2. 连接词的结合力依次递减为： $\neg$，$\wedge$，$\vee$，$\to$，$\leftrightarrow$
+> 3. 相同优先级的连接词，从右向左结合
+> 4. 其他情况下，括号不能省略
 
 > [!Example]+
 > 以下是一些根据上述省略约定得到的公式：
 > - $p\to q \to r$ 等价于 $p\to (q \to r)$
 > - $p\wedge q \vee r$ 等价于 $(p\wedge q) \vee r$
 > - $r\to p \to p \leftrightarrow \neg \neg p \vee q$ 等价于 $(r\to (p \to p)) \leftrightarrow (\neg \neg p \vee q)$
+
+<!-- subformula_l_0 -->
+> [!Definition]
+> **子公式 Subformula**：设 $\varphi$ 是 $\mathcal{L}_0$ 的公式，$\varphi$ 的子公式按如下方式递归定义：
+> 1. $\varphi$ 是 $\varphi$ 自身的子公式；
+> 2. 若 $\neg \psi$ 是 $\varphi$ 的子公式，则 $\psi$ 是 $\varphi$ 的子公式；
+> 3. 若 $\psi_1 \to \psi_2$ 是 $\varphi$ 的子公式，则 $\psi_1$ 和 $\psi_2$ 都是 $\varphi$ 的子公式。
+
+> 由于 $\mathcal{L}_0$ 中合取、析取、双条件等连接词都是由否定与蕴含定义的派生连接词，故只需对 $\neg$ 与 $\to$ 给出递归条款。若把它们视为基本连接词，则对每个二元连接词 $\circ \in \{\wedge, \vee, \leftrightarrow\}$ 都补充一条与第 3 条类似的条款即可。

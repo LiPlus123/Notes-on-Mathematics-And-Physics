@@ -13,6 +13,9 @@
 - bicon_l_0:
     description: 双条件逻辑连接词的定义
     belongs_to: propositional_language/symbols_and_syntax_l_0
+- subformula_l_0:
+    description: 命题逻辑语言公式的子公式的定义
+    belongs_to: propositional_language/symbols_and_syntax_l_0
 - truth_function_l_0:
     description: 真值函数的定义，逻辑连接词如何影响命题公式的真值
     belongs_to: propositional_language/semantics_l_0
@@ -55,3 +58,138 @@
 - semantic_consequence_l_0:
     description: 语义后承的定义
     belongs_to: propositional_language/semantics_l_0
+- axiom_schema_l_0:
+    description: 命题逻辑语言公理系统的公理模式的定义
+    belongs_to: propositional_language/axiom_system_l_0
+- modus_ponens_l_0:
+    description: 命题逻辑语言公理系统 MP 规则的定义
+    belongs_to: propositional_language/axiom_system_l_0
+- formal_proof_l_0:
+    description: 命题逻辑语言公理系统形式证明的定义
+    belongs_to: propositional_language/axiom_system_l_0
+- provable_l_0:
+    description: 命题逻辑语言公理系统可证明关系的定义
+    belongs_to: propositional_language/axiom_system_l_0
+- internal_theorem_l_0:
+    description: 命题逻辑语言公理系统内定理的定义
+    belongs_to: propositional_language/axiom_system_l_0
+- deduction_theorem_l_0:
+    description: 命题逻辑语言公理系统演绎定理
+    belongs_to: propositional_language/axiom_system_l_0
+- hypothetical_syllogism_l_0:
+    description: 命题逻辑语言公理系统演绎定理的推论——假言三段论
+    belongs_to: propositional_language/axiom_system_l_0
+- proof_by_contradiction_l_0:
+    description: 命题逻辑语言公理系统反证法
+    belongs_to: propositional_language/axiom_system_l_0
+- double_negation_law_l_0:
+    description: 命题逻辑语言公理系统双重否定律
+    belongs_to: propositional_language/axiom_system_l_0
+- reductio_ad_absurdum_law_l_0:
+    description: 命题逻辑语言公理系统归谬律
+    belongs_to: propositional_language/axiom_system_l_0
+- second_double_negation_law_l_0:
+    description: 命题逻辑语言公理系统第二双重否定律
+    belongs_to: propositional_language/axiom_system_l_0
+- implication_introduction_rule_l_0:
+    description: 命题逻辑语言自然演绎系统蕴含引入规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- implication_elimination_rule_l_0:
+    description: 命题逻辑语言自然演绎系统蕴含消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- negation_introduction_rule_l_0:
+    description: 命题逻辑语言自然演绎系统否定引入规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- negation_elimination_rule_l_0:
+    description: 命题逻辑语言自然演绎系统否定消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- conjunction_introduction_rule_l_0:
+    description: 命题逻辑语言自然演绎系统合取引入规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- conjunction_elimination_rule_l_0:
+    description: 命题逻辑语言自然演绎系统合取消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- disjunction_introduction_rule_l_0:
+    description: 命题逻辑语言自然演绎系统析取引入规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- disjunction_elimination_rule_l_0:
+    description: 命题逻辑语言自然演绎系统析取消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- biconditional_introduction_rule_l_0:
+    description: 命题逻辑语言自然演绎系统双条件引入规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- biconditional_elimination_rule_l_0:
+    description: 命题逻辑语言自然演绎系统双条件消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- natural_deduction_formal_proof_l_0:
+    description: 命题逻辑语言自然演绎系统形式证明的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- double_negation_elimination_rule_l_0:
+    description: 命题逻辑语言经典自然演绎系统双重否定消去规则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- excluded_middle_rule_l_0:
+    description: 命题逻辑语言经典自然演绎系统排中法则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- reductio_ad_absurdum_rule_l_0:
+    description: 命题逻辑语言经典自然演绎系统归谬法则的定义
+    belongs_to: propositional_language/natural_deduction_l_0
+- equivalence_of_deduction_systems_l_0:
+    description: 命题逻辑语言自然演绎系统与公理系统等价性的定理
+    belongs_to: propositional_language/natural_deduction_l_0
+- sequent_l_0:
+    description: 经典命题逻辑语言相继式演算系统相继式的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- internal_theorem_sequent_calculus_l_0:
+    description: 经典命题逻辑语言相继式演算系统内定理的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- weakening_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统弱化规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- contraction_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统收缩规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- cut_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统切规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- conjunction_left_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统合取左规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- conjunction_right_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统合取右规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- disjunction_left_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统析取左规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- disjunction_right_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统析取右规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- implication_left_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统蕴含左规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- implication_right_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统蕴含右规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- negation_left_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统否定左规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- negation_right_rule_l_0:
+    description: 经典命题逻辑语言相继式演算系统否定右规则的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- initial_sequent_l_0:
+    description: 经典命题逻辑语言相继式演算系统初始相继式的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- formal_proof_sequent_calculus_l_0:
+    description: 经典命题逻辑语言相继式演算系统形式证明的定义
+    belongs_to: propositional_language/sequent_calculus_l_0
+- cut_elimination_theorem_l_0:
+    description: 经典命题逻辑语言相继式演算系统切消定理
+    belongs_to: propositional_language/sequent_calculus_l_0
+- subformula_property_l_0:
+    description: 经典命题逻辑语言相继式演算系统切消定理的推论——子公式性质
+    belongs_to: propositional_language/sequent_calculus_l_0
+- equivalence_sequent_axiom_l_0:
+    description: 经典命题逻辑语言相继式演算系统与公理系统等价性的定理
+    belongs_to: propositional_language/sequent_calculus_l_0
+- equivalence_sequent_natural_deduction_l_0:
+    description: 经典命题逻辑语言相继式演算系统与自然演绎系统等价性的定理
+    belongs_to: propositional_language/sequent_calculus_l_0

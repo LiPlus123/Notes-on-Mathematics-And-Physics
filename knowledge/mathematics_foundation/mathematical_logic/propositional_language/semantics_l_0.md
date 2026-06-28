@@ -37,6 +37,7 @@ refs:
 > $$
 > 称为反同真值函数。
 
+
 > 否定连接词在自然语言中，对应 “并非……” 的形式。反同真值函数用一个单独的真值表表示为：
 > 
 > | $b$ | $f_{\neg}$ |
@@ -67,6 +68,7 @@ refs:
 > \end{cases}
 > $$
 
+
 > 蕴含连接词在自然语言中，对应 “如果...那么...” 的形式。蕴含真值函数用一个单独的真值表表示为：
 > 
 > | $b_1$ | $b_2$ | $f_{\to}$ |
@@ -85,6 +87,7 @@ refs:
 > \bot & \text{otherwise}
 > \end{cases}
 > $$
+
 
 > 合取连接词在自然语言中，对应 “...和...” 的形式。合取真值函数用一个单独的真值表表示为：
 >
@@ -105,6 +108,7 @@ refs:
 > \end{cases}
 > $$
 
+
 > 析取连接词在自然语言中，对应 “...或者...” 的形式。析取真值函数用一个单独的真值表表示为：
 >
 > | $b_1$ | $b_2$ | $f_{\vee}$ |
@@ -124,6 +128,7 @@ refs:
 > \end{cases}
 > $$
 
+
 > 双条件连接词在自然语言中，对应 “当且仅当...” 的形式。双条件真值函数用一个单独的真值表表示为：
 >
 > | $b_1$ | $b_2$ | $f_{\leftrightarrow}$ |
@@ -142,6 +147,7 @@ refs:
 > [!Definition]
 > **赋值函数 Assignment Function**：是从命题变元集到集合 $\{\bot,\top\}$ 的函数，记为 $v$。
 
+
 > 赋值函数为每个命题变元指定唯一真值，比如记命题“太阳从西边出来”为 $p$，那么 $v(p) = \bot$
 
 <!-- formula_assignment_l_0 -->
@@ -150,6 +156,7 @@ refs:
 > 1. 对任意命题变元 $p$，$\bar{v}(p) = v(p)$
 > 2. 设 $\varphi$ 是公式，那么 $\bar{v}(\neg \varphi) = f_{\neg}(\bar{v}(\varphi))$
 > 3. 设 $\varphi,\psi$ 是公式，那么 $\bar{v}(\varphi \to \psi) = f_{\to}(\bar{v}(\varphi),\bar{v}(\psi))$
+
 
 > 公式赋值函数 $\bar{v}$ 给出公式的真值，它不仅取决于组成命题变元的赋值函数 $v$，还取决于公式中逻辑连接词的真值函数。
 
@@ -173,6 +180,7 @@ refs:
 > $$
 > \bar{v}(\varphi \leftrightarrow \psi) = f_{\leftrightarrow}(\bar{v}(\varphi),\bar{v}(\psi))
 > $$
+
 
 > 证明思路：根据合取、析取、双条件的定义与合取、析取、双条件的真值表，可以证明上述定理。
 
@@ -200,11 +208,13 @@ refs:
 > \models \varphi
 > $$
 
+
 > 重言式也称为“永真式”，指的是无论命题变元取什么真值，这个公式都为真。比如，公式 $p \vee \neg p$ 就是一个重言式，因为无论 $p$ 是真还是假，这个公式的真值都为真。与重言式相对的，称为“矛盾式”。
 
 <!-- contradiction_formula_l_0 -->
 > [!Definition]
 > **矛盾式 Contradiction**：设 $\varphi$ 是 $\mathcal{L}_0$ 的一个公式，如果任意赋值 $v$ 都不满足 $\varphi$，那么称 $\varphi$ 是一个矛盾式。
+
 
 > 矛盾式也称为“永假式”，指的是无论命题变元取什么真值，这个公式都为假。比如，公式 $p \wedge \neg p$ 就是一个矛盾式，因为无论 $p$ 是真还是假，这个公式的真值都为假。
 
@@ -229,5 +239,5 @@ refs:
 > \Gamma \models \varphi
 > $$
 
-> [!Proposition]
-> 如果 $\varphi$ 是 $\mathcal{L}_0$ 的重言式，那么 $\varnothing \models \varphi$。
+<!-- > [!Proposition]
+> 如果 $\varphi$ 是 $\mathcal{L}_0$ 的重言式，那么 $\varnothing \models \varphi$。 -->

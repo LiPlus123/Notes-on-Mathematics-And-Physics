@@ -54,15 +54,17 @@
 
 命题变元用小写字母 $p,q,r$ 表示，或者 $p_0, p_1, \ldots$
 
-公式用希腊字母 $\varphi,\psi,\theta$ 表示，或 $\varphi_0,\varphi_1,\ldots$；公式集用大写希腊字母 $\Gamma,\Delta,\Sigma$ 或 $\Gamma_0,\Gamma_1,\ldots$
+公式用希腊字母 $\varphi,\psi,\theta$ 表示，或 $\varphi_0,\varphi_1,\ldots$；公式集用大写希腊字母 $\Gamma,\Delta,\Sigma,\Pi$ 或 $\Gamma_0,\Gamma_1,\ldots$
 
 真值函数：$f_{\neg}$（非），$f_{\to}$（蕴含），$f_{\wedge}$（与），$f_{\vee}$（或），$f_{\leftrightarrow}$（双条件）
 
 命题赋值函数 $v$；公式赋值函数 $\bar{v}$
 
-满足关系：命题赋值满足公式 $v\models \varphi$，命题赋值满足公式集 $v\models \Gamma$；语义后承 $\Gamma \models \varphi$
+满足关系：命题赋值满足公式 $v\models \varphi$；命题赋值满足公式集 $v\models \Gamma$；语义后承 $\Gamma \models \varphi$
 
-证明关系：$\Gamma \vdash \varphi$
+证明关系：$\Gamma \vdash \varphi$；推出矛盾 $\Gamma \vdash \bot$
+
+相继式：$\Gamma \Rightarrow \Delta$
 
 ## 组合数学
 

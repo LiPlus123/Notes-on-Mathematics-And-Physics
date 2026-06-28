@@ -21,13 +21,13 @@ mathematical_logic:
       content: 真值函数与赋值函数、满足关系、语义后承、可满足式、重言式
     - axiom_system_l_0:
       title: 公理系统
-      content: 公理模式、MP 规则、形式证明、可证关系、演绎定理
+      content: 公理模式、MP 规则、形式证明、可证关系、演绎定理、假言三段论、反证律、归谬律、双重否定律
     - natural_deduction_l_0:
       title: 自然演绎系统
       content: 演绎规则、形式证明、与公理系统的等价性
     - sequent_calculus_l_0:
       title: 相继式演算系统
-      content: 序列、演绎规则、形式证明、割消定理、与公理系统的等价性
+      content: 序列、演绎规则、形式证明、切消定理、与公理系统的等价性、与自然演绎系统的等价性
     - meta_theory_l_0:
       title: 元理论
       content: 紧致性、可靠性、完全性、紧致性与可判定性
@@ -36,6 +36,15 @@ mathematical_logic:
     subsections:
     - symbols_and_syntax_l_1:
       title: 符号和语法
+    - semantics_l_1:
+      title: 语义
+      content: 结构与赋值、理论与模型、满足关系
+    - agreement_and_substitution_l_1:
+      title: 合同与代入
+    - axiom_system_l_1:
+      title: 公理系统
+    - zfc_axiom_theory:
+      title: ZFC 公理系统
   - recursion_theory:
     title: 递归论
     subsections:

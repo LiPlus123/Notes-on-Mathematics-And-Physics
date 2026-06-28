@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "df013a63d0fdb251",
+        "id": "cb88f2ae77618f58",
         "type": "tabs",
         "children": [
           {
-            "id": "22fa0a934ddf8152",
+            "id": "f150d95b3c737061",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "mathematics_foundation/mathematical_logic/propositional_language/propositional_language.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "propositional_language"
             }
           }
         ]
@@ -176,16 +180,21 @@
       "bases:新建数据库": false
     }
   },
-  "active": "8a8a0ce4692e7318",
+  "active": "f150d95b3c737061",
   "lastOpenFiles": [
+    "mathematics_foundation/mathematical_logic/propositional_language/propositional_language.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/axiom_system_l_0.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/semantics_l_0.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/meta_theory_l_0.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/natural_deduction_l_0.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/sequent_calculus_l_0.md",
+    "mathematics_foundation/mathematical_logic/propositional_language/symbols_and_syntax_l_0.md",
+    "未命名.base",
     "mathematics_foundation/mathematical_logic/first_order_language/symbols_and_syntax_l_1.md",
     "mathematics_foundation/mathematical_logic/chapters_outline.yml",
     "foundation_of_math/mathematical_logic/recursion_theory",
     "foundation_of_math/mathematical_logic/first_order_language",
     "mathematics_foundation/mathematical_logic/first_order_language",
-    "mathematics_foundation/mathematical_logic/propositional_language/meta_theory_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/sequent_calculus_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/natural_deduction_l_0.md",
     "topology/topological_space/keypoints_list.yml.baiduyun.uploading.cfg",
     "topology/topological_space/chapters_outline.yml.baiduyun.uploading.cfg",
     "foundation_of_math/set_theory/zfc_axiomatic_system/axiom_of_extensionality.md",
@@ -197,7 +206,6 @@
     "foundation_of_math/mathematical_logic/what_is_logic/propositional_logic/truth_table.md",
     "foundation_of_math/mathematical_logic/what_is_logic/propositional_logic/propositional_reasoning.md",
     "foundation_of_math/mathematical_logic/what_is_logic/thinking_and_language.md",
-    "foundation_of_math/mathematical structure/chapters_outline.yml",
     "foundation_of_math/set_theory/naive_set_theory.md",
     "foundation_of_math/mathematical_logic/what_is_logic/propositional_logic/tautology.md",
     "foundation_of_math/mathematical_logic/what_is_logic/classical_logic.md",
@@ -205,14 +213,9 @@
     "foundation_of_math/mathematical_logic/what_is_logic/propositional_logic/propositional_logic.md",
     "foundation_of_math/mathematical_logic/what_is_logic/propositional_logic/connective.md",
     "foundation_of_math/mathematical_logic/propositional_language/syntax_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/axiom_system_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/semantics_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/symbols_and_syntax_l_0.md",
-    "mathematics_foundation/mathematical_logic/propositional_language/propositional_language.md",
     "mathematics_foundation/mathematical_logic/what_is_logic/mathematical_logic.md",
     "mathematics_foundation/mathematical_logic/what_is_logic/propositional_logic/propositional_reasoning.md",
     "mathematics_foundation/mathematical_logic/what_is_logic/propositional_logic/propositional_logic.md",
-    "mathematics_foundation/mathematical_logic/what_is_logic/propositional_logic/equivalent.md",
-    "mathematics_foundation/mathematical_logic/what_is_logic/propositional_logic/connective.md"
+    "mathematics_foundation/mathematical_logic/what_is_logic/propositional_logic/equivalent.md"
   ]
 }
