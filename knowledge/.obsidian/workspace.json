@@ -11,10 +11,14 @@
             "id": "f150d95b3c737061",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "foundation/mathematical_logic/propositional_language/propositional_language.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "propositional_language"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "f150d95b3c737061",
   "lastOpenFiles": [
+    "foundation/mathematical_logic/propositional_language/natural_deduction_l_0.md",
     "mathematics_foundation/mathematical_logic/propositional_language/propositional_language.md",
     "mathematics_foundation/mathematical_logic/propositional_language/axiom_system_l_0.md",
     "mathematics_foundation/mathematical_logic/propositional_language/semantics_l_0.md",
