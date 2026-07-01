@@ -10,7 +10,7 @@ refs:
 
 # 公理系统
 
-公理系统 Axiom System 全称“希尔伯特公理演绎系统”，是由数学家大卫·希尔伯特（David Hilbert, 1862-1943）提出，用于描述形式化证明的系统。
+公理系统 Axiom System 全称“希尔伯特公理演绎系统”，是由数学家大卫·希尔伯特（David Hilbert, 1862-1943）提出的[[formal_system|形式系统]]。
 
 <!-- axiom_schema_l_0 -->
 > [!Definition]
@@ -21,6 +21,7 @@ refs:
 
 > 在希尔伯特公理演绎系统中：
 > 1. 上述三条是公理模式，也即，将 $\varphi$、$\psi$、$\theta$ 替换为 $\mathcal{L}_0$ 的任意公式，得到的实例都是希尔伯特公理演绎系统的公理。因此，希尔伯特公理演绎系统包含无穷多个公理。
+> 2. 通过真值表可以验证，这三条公理模式的实例都是“重言式”，也即在任何命题赋值下都为真，适合作为“推理的起点”，从“真前提”演绎出“真结论”。从元数学的角度，选择重言式作为公理，是为了保证公理系统具有“可靠性 Soundness”，这在后面的小节中详细说明。
 > 2. 肯定后件模式说明，如果 $\varphi$ 成立，那么无论 $\psi$ 是什么，$\psi \to \varphi$ 都成立。比如，“今天下雨$\to$(太阳从西边出来$\to$今天下雨)” 是一条公理，虽然“太阳从西边出来” 是一个荒谬的命题，但它并不影响这条公理在形式上成立
 > 3. 蕴含词分配模式说明，如果 $\varphi$ 能推出 $\psi \to \theta$，那么如果 $\varphi$ 能推出 $\psi$，就能推出 $\theta$。比如，“(下雨$\to$(地面湿$\to$地面滑)) $\to$ ((下雨$\to$地面湿) $\to$ (下雨$\to$地面滑))”
 > 4. 换位模式说明，逆否命题能推出原命题。比如，“(今天没下雨$\to$地面不湿) $\to$ (地面湿$\to$今天下雨)”
@@ -34,38 +35,39 @@ refs:
 > $$
 > 称为 Modus Ponens 规则，记为 MP 规则。
 
-> MP 规则，也称为“分离规则”，或“假言推理规则”，它来自重言式——分离律 $\varphi \wedge (\varphi \to \psi) \to \psi$。说明如果 $\varphi$ 成立且 $\varphi$ 能推出 $\psi$，那么 $\psi$ 也成立。
+> MP 规则，也称为“分离规则”，或“假言推理规则”，它能从蕴含式 $\varphi\to\psi$ 中，将结论 $\psi$ “提取出来”。它来自重言式——分离律 $\varphi \wedge (\varphi \to \psi) \to \psi$。说明如果 $\varphi$ 成立且 $\varphi$ 能推出 $\psi$，那么 $\psi$ 一定成立，这是“蕴含连接词作出的承诺”。
 
 <!-- formal_proof_l_0 -->
 > [!Definition]
-> **形式证明 Formal Proof**：设 $\Gamma$ 是 $\mathcal{L}_0$ 的一个公式集，$\varphi_1,\cdots,\varphi_n$ 是一个 $\mathcal{L}_0$ 的公式序列，如果每个公式 $\varphi_k,k=1,\cdots,n$ 满足以下三个条件之一：
+> **形式证明 Formal Proof**：$\varphi_1,\cdots,\varphi_n$ 是一个 $\mathcal{L}_0$ 的有限的公式序列，如果每个公式 $\varphi_k,k=1,\cdots,n$ 满足以下两个条件之一：
+> 1. $\varphi_k$ 是一个公理模式的实例
+> 2. $\varphi_k$ 是由前面的公式通过 MP 规则得到的，也即存在 $i,j < k$ 使得 $\varphi_j = (\varphi_i \to \varphi_k)$
+>
+> 则称这个公式序列是一个形式证明。
+
+> 在希尔伯特公理系统中，“证明”是一串公式序列，是一个纯“语法”概念。其中，MP 规则是从公理实例中产生新公式的唯一途径。在得到 $\varphi_k$ 之前，$\varphi_i$ 和 $\varphi_i\to\varphi_k$ 已经得到了证明且为真，那么推出的 $\varphi_k$ 也为真。从元数学的角度，公理模式和 MP 规则一起保证了公理系统的“可靠性 Soundness”。
+
+<!-- formal_proof_with_assumptions_l_0 -->
+> [!Definition]
+> **带假设的形式证明 Formal Proof with Assumptions**：设 $\Gamma$ 是 $\mathcal{L}_0$ 的一个公式集，$\varphi_1,\cdots,\varphi_n$ 是一个 $\mathcal{L}_0$ 的公式序列，如果每个公式 $\varphi_k,k=1,\cdots,n$ 满足以下三个条件之一：
 > 1. $\varphi_k$ 是 $\Gamma$ 中的一个公式
 > 2. $\varphi_k$ 是一个公理模式的实例
 > 3. $\varphi_k$ 是由前面的公式通过 MP 规则得到的，也即存在 $i,j < k$ 使得 $\varphi_j = (\varphi_i \to \varphi_k)$
 > 
-> 则称这个公式序列为一个以 $\Gamma$ 为假设的证明。
+> 则称这个公式序列为一个以 $\Gamma$ 为假设的形式证明。
 
-<!-- provable_l_0 -->
+<!-- provable_and_theorem_l_0 -->
 > [!Definition]
-> **可证明 Provable**：如果 $\varphi_n = \varphi$，那么称 $\varphi$ 是在公式集 $\Gamma$ 下的一个可证明式，记为：
+> **可证明与定理 Provable And Theorem**：设 $\Gamma$ 是 $\mathcal{L}_0$ 的一个公式集，$\varphi_1,\cdots,\varphi_n$ 是一个形式证明。如果 $\varphi_n = \varphi$，那么称 $\varphi$ 是在公式集 $\Gamma$ 下的一个可证明式，记为：
 > $$
 > \Gamma \vdash \varphi
 > $$
-
-> 在希尔伯特公理演绎系统中，“证明”是由公理、假设和 MP 规则生成的有限公式序列，是一个纯“语法”概念。满足关系 $\models$ 是一个语义概念，它与可证明关系  $\vdash$ 有重要的联系，在后面可靠性和完全性定理中会给出详细的说明。
-
-<!-- internal_theorem_l_0 -->
-> [!Definition]
-> **内定理 Internal Theorem**：如果 $\Gamma = \varnothing$，并且存在一个$\mathcal{L}_0$ 的公式序列 $\varphi_1,\cdots,\varphi_n$ 满足以下两个条件之一：
-> 1. $\varphi_k$ 是一个公理模式的实例
-> 2. $\varphi_k$ 是由前面的公式通过 MP 规则得到的，也即存在 $i,j < k$ 使得 $\varphi_j = (\varphi_i \to \varphi_k)$ 
-> 
-> 并且 $\varphi_n = \varphi$ ，那么称 $\varphi$ 是 $\mathcal{L}_0$ 的内定理，记为：
+> 特别地，如果 $\Gamma = \varnothing$，那么称 $\varphi$ 是公理系统的一个定理，记为：
 > $$
 > \vdash \varphi
 > $$
 
-> 内定理可以看成是没有任何假设的可证明式，比如同一律就是 $\mathcal{L}_0$ 的一个内定理 $\vdash \varphi \to \varphi$
+> 可证明关系 $\vdash$ 是公式集与公式之间的关系，它是语法层面的概念，它与语义层面的满足关系 $\models$ 有着重要的联系；定理可以是没有任何假设的可证明式，它只依赖公理，与语义层面的重言式也有着重要的联系。在后面元数学小节会详细介绍
 
 <!-- deduction_theorem_l_0 -->
 > [!Theorem]

@@ -1,0 +1,9 @@
+lean4_prover:
+  title: Lean4 证明器
+  sections:
+    - lean4_grammar:
+      title: Lean4 语法
+      subsections:
+        - bnf_and_ebnf:
+          title: BNF 与 EBNF
+          content: 衔接形式语言的 CFG，介绍 BNF 与 EBNF，为定义 Lean4 Core Language 做铺垫

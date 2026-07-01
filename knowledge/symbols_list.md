@@ -60,9 +60,9 @@
 
 命题赋值函数 $v$；公式赋值函数 $\bar{v}$
 
-满足关系：命题赋值满足公式 $v\models \varphi$；命题赋值满足公式集 $v\models \Gamma$；语义后承 $\Gamma \models \varphi$
+满足关系：命题赋值满足公式 $v\models \varphi$；命题赋值满足公式集 $v\models \Gamma$；语义后承 $\Gamma \models \varphi$；重言式 $\models \varphi$
 
-证明关系：$\Gamma \vdash \varphi$；推出矛盾 $\Gamma \vdash \bot$
+证明关系：$\Gamma \vdash \varphi$；推出矛盾 $\Gamma \vdash \bot$；定理 $\vdash \varphi$
 
 相继式：$\Gamma \Rightarrow \Delta$
 

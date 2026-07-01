@@ -50,8 +50,8 @@
             description: 命题逻辑语言公理系统形式证明的定义
         - provable_l_0:
             description: 命题逻辑语言公理系统可证明关系的定义
-        - internal_theorem_l_0:
-            description: 命题逻辑语言公理系统内定理的定义
+        - theorem_l_0:
+            description: 命题逻辑语言公理系统定理的定义
         - deduction_theorem_l_0:
             description: 命题逻辑语言公理系统演绎定理
         - hypothetical_syllogism_l_0:
